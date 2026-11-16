@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name/Value Pairs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="card">
+        <h1>Test</h1>
+        <!-- Рядок 1: поле введення пари та кнопка Add -->
+        <div class="row">
+            <div class="field">
+                <label for="pair-input">Name/Value Pair</label>
+                <input type="text" id="pair-input" placeholder="Name=Value" autocomplete="off">
+                <!-- Сюди скрипт виводить повідомлення про помилку формату -->
+                <p id="error" class="error" role="alert"></p>
+            </div>
+            <div class="buttons">
+                <button id="add-btn" type="button">Add</button>
+            </div>
+        </div>
+        <!-- Рядок 2: список пар та кнопки керування ним -->
+        <div class="row">
+            <div class="field">
+                <label for="pair-list">Name/Value Pair List</label>
+                <select id="pair-list" multiple size="12"></select>
+            </div>
+            <div class="buttons">
+                <button id="sort-name-btn" type="button">Sort by Name</button>
+                <button id="sort-value-btn" type="button">Sort by Value</button>
+                <!-- Видаляє всі виділені у списку пари -->
+                <button id="delete-btn" type="button">Delete</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
